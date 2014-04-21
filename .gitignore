@@ -1,0 +1,35 @@
+# IDEA stuff
+
+/*.iml
+/*.ipr
+/*.iws
+
+# Eclipse stuff
+
+/.classpath
+/.project
+/.settings/
+
+# Gradle/FG stuff
+
+/.gradle/
+/build/
+/out/
+/eclipse/
+
+/gradlew
+/gradlew.bat
+
+# Forge stuff
+
+/forge-*-changelog.txt
+/README.txt
+
+# Git stuff
+
+/.git/
+
+# Thaumcraft
+
+/tcdeobf.jar
+/tcdeobf/
