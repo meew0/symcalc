@@ -4,7 +4,7 @@ import net.minecraft.init.Blocks;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import thaumcraft.common.config;
+import thaumcraft.common.config.ConfigBlocks;
 
 @Mod(modid = SymcalcMod.MODID, version = SymcalcMod.VERSION, name = SymcalcMod.NAME)
 public class SymcalcMod
@@ -18,6 +18,6 @@ public class SymcalcMod
     {
         // some example code
         System.out.println("DIRT BLOCK >> "+Blocks.dirt.getUnlocalizedName());
-        System.out.println("TABLE >> "+ConfigBlocks.blockTable.getUnlocalizedName());
+        System.out.println("TABLE >> "+ ConfigBlocks.blockTable.getUnlocalizedName());
     }
 }
