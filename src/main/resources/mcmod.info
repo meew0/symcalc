@@ -1,16 +1,16 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "symcalc",
+  "name": "Symcalc",
+  "description": "A mod that allows you to check the symmetry of Thaumcraft infusion altars.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authors": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authors": ["meew0"],
+  "credits": "meew0 for making this mod, Azanor for making Thaumcraft and the Forge/FML guys for making Forge/FML",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["Thaumcraft"]
 }
 ]
