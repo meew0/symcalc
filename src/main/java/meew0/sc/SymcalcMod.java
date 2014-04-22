@@ -4,6 +4,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import meew0.sc.items.ItemSymmetryCalculator;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -44,7 +45,12 @@ public class SymcalcMod
         log = event.getModLog();
         log.info(NAME + " " + VERSION + " initializing");
 
-        itemSymCalc = new ItemSymmetryCalculator().setUnlocalizedName("symmetryCalculator").setTextureName("symcalc:symmetry_calculator").setMaxStackSize(1);
+        itemSymCalc = new ItemSymmetryCalculator()
+                .setUnlocalizedName("symmetryCalculator")
+                .setTextureName("symcalc:symmetry_calculator")
+                .setMaxStackSize(1)
+                .setCreativeTab(CreativeTabs.tabAllSearch);
+
         GameRegistry.registerItem(itemSymCalc, "symmetryCalculator");
 
         log.info("Added symmetry calculator item");
@@ -85,7 +91,7 @@ public class SymcalcMod
                                 new ResearchPage("symcalc.research.1"),
                                 new ResearchPage((IArcaneRecipe) ConfigResearch.recipes.get("SymmetryCalculator"))
                         })
-                .setParents(new String[] { "INFUSION" })
+                .setParents(new String[]{"INFUSION"})
                 .setHidden()
                 .setItemTriggers(new ItemStack(ConfigBlocks.blockStoneDevice, 1, 2))    // runic matrix
                 .registerResearchItem();
