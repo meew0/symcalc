@@ -1,0 +1,36 @@
+
+item.symmetryCalculator.name=Symmetry Calculator
+
+
+tc.research_name.SYMMETRY_CALCULATOR=Symmetry Calculator
+tc.research_text.SYMMETRY_CALCULATOR=Making infusions fun again
+
+
+symcalc.research.1=After you've learned how to make an infusion altar, the device that helps you stabilize the altar was overdue. Right-click a runic matrix with this item and it will tell you the total stability level. The returned stability value is the same value that is used in the internal calculations of the runic matrix.
+
+
+symcalc.message.value=§bThis infusion altar has a stability value of %s.§0
+
+symcalc.message.recipe=§aThis is%yenough to stabilize the current recipe with an instability of %s.§0
+symcalc.message.recipe.yes=
+symcalc.message.recipe.no=§4 not §a
+
+symcalc.message.sufficient=§6This is enough to stabilize %i recipes.§0
+symcalc.message.sufficient.0=some "Negligible"
+symcalc.message.sufficient.1="Negligible"
+symcalc.message.sufficient.2=some "Minor"
+symcalc.message.sufficient.3="Minor"
+symcalc.message.sufficient.4=some "Moderate"
+symcalc.message.sufficient.5="Moderate"
+symcalc.message.sufficient.6=some "High"
+symcalc.message.sufficient.7="High"
+symcalc.message.sufficient.8=some "Very High"
+symcalc.message.sufficient.9="Very High"
+symcalc.message.sufficient.10=some "Dangerous"
+symcalc.message.sufficient.11=some "Dangerous"
+symcalc.message.sufficient.12=some "Dangerous"
+symcalc.message.sufficient.13=some "Dangerous"
+symcalc.message.sufficient.14=some "Dangerous"
+symcalc.message.sufficient.15=all
+
+symcalc.message.error=§cStability checking failed! More info in server console.

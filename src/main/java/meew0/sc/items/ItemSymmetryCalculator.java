@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import thaumcraft.common.tiles.TileInfusionMatrix;
 
@@ -28,29 +29,34 @@ public class ItemSymmetryCalculator extends Item {
                 mgs.setAccessible(true);
                 mgs.invoke(te2);
 
-                player.addChatComponentMessage(new ChatComponentText("This infusion altar has a stability value of " +
-                        te2.symmetry));
+                int sym = -te2.symmetry;
+
+                player.addChatComponentMessage(new ChatComponentText(
+                        StatCollector.translateToLocal("symcalc.message.value").replace("%s", "" + sym)));
+
+                player.addChatComponentMessage(new ChatComponentText(
+                        StatCollector.translateToLocal("symcalc.message.sufficient").replace("%i",
+                                StatCollector.translateToLocal("symcalc.message.sufficient." +
+                                Math.min(15, sym)))));
 
                 Field fri = te2.getClass().getDeclaredField("recipeInstability");
                 fri.setAccessible(true);
                 int recipeInstability = (Integer) fri.get(te2);
 
                 if(recipeInstability > 0) {
-                    if(te2.symmetry >= recipeInstability) {
-                        player.addChatComponentMessage(new ChatComponentText(
-                                "This is enough to stabilize the current recipe with an instability of " +
-                                        recipeInstability + "."));
-                    } else {
-                        player.addChatComponentMessage(new ChatComponentText(
-                                "This is not enough to stabilize the current recipe with an instability of " +
-                                        recipeInstability + "."));
+                    String msg = StatCollector.translateToLocal("symcalc.message.recipe").replace("%s", "" +
+                            recipeInstability);
+                    String y2 = "symcalc.message.recipe.no";
+                    if(sym >= recipeInstability) {
+                        y2 = "symcalc.message.recipe.yes";
                     }
+                    player.addChatComponentMessage(new ChatComponentText(msg.replace("%y", y2)));
                 }
                 return true;
             }
         } catch(Exception e) {
-            player.addChatComponentMessage(new ChatComponentText(EnumChatFormatting.RED +
-                    "Stability checking failed! More info in server console"));
+            player.addChatComponentMessage(new ChatComponentText(
+                    StatCollector.translateToLocal("symcalc.message.error")));
             System.out.println("[symcalc] Player " + player.getCommandSenderName() +
                     " failed to get the stability of the runic matrix at " + x + ", " + y + ", " + z + ": ");
             e.printStackTrace();
