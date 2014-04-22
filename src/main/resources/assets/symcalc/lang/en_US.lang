@@ -33,4 +33,4 @@ symcalc.message.sufficient.13=some "Dangerous"
 symcalc.message.sufficient.14=some "Dangerous"
 symcalc.message.sufficient.15=all
 
-symcalc.message.error=§cStability checking failed! More info in server console.
+symcalc.message.error=§cStability checking failed! More info in server console.§0

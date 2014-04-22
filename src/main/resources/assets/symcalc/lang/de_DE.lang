@@ -1,0 +1,36 @@
+
+item.symmetryCalculator.name=Symmetrie-Rechner
+
+
+tc.research_name.SYMMETRY_CALCULATOR=Symmetrie-Rechner
+tc.research_text.SYMMETRY_CALCULATOR=Damit Infusionen wieder Spaß machen
+
+
+symcalc.research.1=Nachdem du gelernt hast, wie man einen Infusionsaltar baut, war ein Gerät, das dir hilft, diesen zu stabilisieren, überfallig. Wenn du eine Runenmatrix mit diesem Item rechtsklickst, wird dir gesagt, wie stabil der Altar ist. Der Stabilitätswert ist derselbe Wert, der auch in internen Berechnungen verwendet wird.
+
+
+symcalc.message.value=§bDieser Infusionsaltar hat einen Stabilitätswert von %s.§0
+
+symcalc.message.recipe=§aDas ist%ygenug, um das momentane Rezept mit einem Stabilitätswert von %s zu stabilisieren.§0
+symcalc.message.recipe.yes=
+symcalc.message.recipe.no=§4 nicht §a
+
+symcalc.message.sufficient=§6Das ist genug, um %iRezepte zu stabilisieren.§0
+symcalc.message.sufficient.0=manche "Unbedeutend"-
+symcalc.message.sufficient.1="Unbedeutend"-
+symcalc.message.sufficient.2=manche "Gering"-
+symcalc.message.sufficient.3="Gering"-
+symcalc.message.sufficient.4=manche "Mäßig"-
+symcalc.message.sufficient.5="Mäßig"-
+symcalc.message.sufficient.6=manche "Hoch"-
+symcalc.message.sufficient.7="Hoch"-
+symcalc.message.sufficient.8=manche "Sehr Hoch"-
+symcalc.message.sufficient.9="Sehr Hoch"-
+symcalc.message.sufficient.10=manche "Gefährlich"-
+symcalc.message.sufficient.11=manche "Gefährlich"-
+symcalc.message.sufficient.12=manche "Gefährlich"-
+symcalc.message.sufficient.13=manche "Gefährlich"-
+symcalc.message.sufficient.14=manche "Gefährlich"-
+symcalc.message.sufficient.15=alle
+
+symcalc.message.error=§cStabilitäts-Berechnung fehlgeschlagen! Mehr Informationen in der Serverkonsole.§0
