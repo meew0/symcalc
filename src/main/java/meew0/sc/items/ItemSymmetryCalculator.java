@@ -37,7 +37,7 @@ public class ItemSymmetryCalculator extends Item {
                 player.addChatComponentMessage(new ChatComponentText(
                         StatCollector.translateToLocal("symcalc.message.sufficient").replace("%i",
                                 StatCollector.translateToLocal("symcalc.message.sufficient." +
-                                Math.min(15, sym)))));
+                                Math.max(-1, Math.min(15, sym))))));
 
                 Field fri = te2.getClass().getDeclaredField("recipeInstability");
                 fri.setAccessible(true);

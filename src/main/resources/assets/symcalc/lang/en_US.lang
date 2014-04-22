@@ -16,6 +16,7 @@ symcalc.message.recipe.yes=
 symcalc.message.recipe.no=§4 not §a
 
 symcalc.message.sufficient=§6This is enough to stabilize %i recipes.§0
+symcalc.message.sufficient.-1=§4no§6
 symcalc.message.sufficient.0=some "Negligible"
 symcalc.message.sufficient.1="Negligible"
 symcalc.message.sufficient.2=some "Minor"

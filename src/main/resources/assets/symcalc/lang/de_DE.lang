@@ -16,6 +16,7 @@ symcalc.message.recipe.yes=
 symcalc.message.recipe.no=§4 nicht §a
 
 symcalc.message.sufficient=§6Das ist genug, um %iRezepte zu stabilisieren.§0
+symcalc.message.sufficient.-1=§4keine §6
 symcalc.message.sufficient.0=manche "Unbedeutend"-
 symcalc.message.sufficient.1="Unbedeutend"-
 symcalc.message.sufficient.2=manche "Gering"-
