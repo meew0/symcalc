@@ -12,6 +12,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.config.Configuration;
 import org.apache.logging.log4j.Logger;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
@@ -28,14 +29,18 @@ import thaumcraft.common.config.ConfigResearch;
 public class SymcalcMod
 {
     public static final String MODID = "symcalc";
-    public static final String VERSION = "0.12";
+    public static final String VERSION = "0.13.3";
     public static final String NAME = "SymCalc";
     public static final String DEP = "required-after:Thaumcraft@[4.1.1.10,)";
 
     public static final String SYMCALC_KEY = "SYMMETRY_CALCULATOR";
 
+    public static Configuration modCfg;
+
     public static Item itemSymCalc;
     public static ResearchItem researchSymCalc;
+
+    public static boolean isResearchHidden;
 
     public static Logger log;
 
@@ -44,6 +49,15 @@ public class SymcalcMod
     {
         log = event.getModLog();
         log.info(NAME + " " + VERSION + " initializing");
+
+        modCfg = new Configuration(event.getSuggestedConfigurationFile());
+
+        modCfg.load();
+
+        isResearchHidden = modCfg.get("general", "isResearchHidden", true,
+                "Determines whether the research for the symmetry calculator is hidden or not.").getBoolean(true);
+
+        modCfg.save();
 
         itemSymCalc = new ItemSymmetryCalculator()
                 .setUnlocalizedName("symmetryCalculator")
@@ -91,10 +105,14 @@ public class SymcalcMod
                                 new ResearchPage("symcalc.research.1"),
                                 new ResearchPage((IArcaneRecipe) ConfigResearch.recipes.get("SymmetryCalculator"))
                         })
-                .setParents(new String[]{"INFUSION"})
-                .setHidden()
-                .setItemTriggers(new ItemStack(ConfigBlocks.blockStoneDevice, 1, 2))    // runic matrix
-                .registerResearchItem();
+                .setParents(new String[]{"INFUSION"});
+
+        if(isResearchHidden) {
+            researchSymCalc
+                    .setHidden()
+                    .setItemTriggers(new ItemStack(ConfigBlocks.blockStoneDevice, 1, 2));    // runic matrix
+        }
+        researchSymCalc.registerResearchItem();
 
         log.info("Added research");
     }
