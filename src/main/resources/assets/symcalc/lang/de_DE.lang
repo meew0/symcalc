@@ -13,7 +13,7 @@ symcalc.message.value=§bDieser Infusionsaltar hat einen Stabilitätswert von %s
 
 symcalc.message.recipe=§aDas ist%ygenug, um das momentane Rezept mit einem Stabilitätswert von %s zu stabilisieren.§0
 symcalc.message.recipe.yes=
-symcalc.message.recipe.no=§4 nicht §a
+symcalc.message.recipe.no=§4nicht §a
 
 symcalc.message.sufficient=§6Das ist genug, um %iRezepte zu stabilisieren.§0
 symcalc.message.sufficient.-1=§4keine §6

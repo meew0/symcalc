@@ -11,9 +11,9 @@ symcalc.research.1=After you've learned how to make an infusion altar, the devic
 
 symcalc.message.value=§bThis infusion altar has a stability value of %s.§0
 
-symcalc.message.recipe=§aThis is%yenough to stabilize the current recipe with an instability of %s.§0
+symcalc.message.recipe=§aThis is %yenough to stabilize the current recipe with an instability of %s.§0
 symcalc.message.recipe.yes=
-symcalc.message.recipe.no=§4 not §a
+symcalc.message.recipe.no=§4not §a
 
 symcalc.message.sufficient=§6This is enough to stabilize %i recipes.§0
 symcalc.message.sufficient.-1=§4no§6

@@ -50,7 +50,7 @@ public class ItemSymmetryCalculator extends Item {
                     if(sym >= recipeInstability) {
                         y2 = "symcalc.message.recipe.yes";
                     }
-                    player.addChatComponentMessage(new ChatComponentText(msg.replace("%y", y2)));
+                    player.addChatComponentMessage(new ChatComponentText(msg.replace("%y", StatCollector.translateToLocal(y2))));
                 }
                 return true;
             }
