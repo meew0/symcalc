@@ -29,7 +29,7 @@ import thaumcraft.common.config.ConfigResearch;
 public class SymcalcMod
 {
     public static final String MODID = "symcalc";
-    public static final String VERSION = "0.13.4";
+    public static final String VERSION = "0.13.5";
     public static final String NAME = "SymCalc";
     public static final String DEP = "required-after:Thaumcraft@[4.1.1.10,)";
 
