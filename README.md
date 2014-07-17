@@ -1,5 +1,6 @@
-symcalc
+![symcalc](https://cloud.githubusercontent.com/assets/6889122/3609703/698ac15a-0d7f-11e4-87b9-45991d1a8240.jpg)
 =======
+(Logo by Mrkwtkr)
 
 A small mod that allows for the simple calculation of the instability of a Thaumcraft 4 infusion altar.
 
