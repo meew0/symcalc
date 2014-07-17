@@ -10,19 +10,19 @@ symcalc.research.1=学会如何制作注魔祭坛后亟需的辅助注魔稳定�
 
 symcalc.message.value=§b当前注魔祭坛稳定度为%s.§0
 
-symcalc.message.recipe=§a已经足以%y稳定当前的合成配方,不稳定性为%s.§0
-symcalc.message.recipe.yes=
-symcalc.message.recipe.no=§4非§a
+symcalc.message.recipe=§a%y稳定当前的合成配方,该合成不稳定性为%s.§0
+symcalc.message.recipe.yes=足以
+symcalc.message.recipe.no=§4无法§a
 
-symcalc.message.sufficient=§6已经足以稳定%i合成配方.§0
+symcalc.message.sufficient=§6该祭坛可稳定注魔的合成配方(风险)为%i.§0
 symcalc.message.sufficient.-1=§4无§6
-symcalc.message.sufficient.0=隐约存在
+symcalc.message.sufficient.0=隐约风险
 symcalc.message.sufficient.1=微乎其微
 symcalc.message.sufficient.2=少许
 symcalc.message.sufficient.3=微量
 symcalc.message.sufficient.4=略有风险
 symcalc.message.sufficient.5=适量
-symcalc.message.sufficient.6=有些高
+symcalc.message.sufficient.6=略高
 symcalc.message.sufficient.7=高
 symcalc.message.sufficient.8=颇高
 symcalc.message.sufficient.9=极高
@@ -31,6 +31,6 @@ symcalc.message.sufficient.11=略有危险
 symcalc.message.sufficient.12=略有危险
 symcalc.message.sufficient.13=略有危险
 symcalc.message.sufficient.14=略有危险
-symcalc.message.sufficient.15=危险重重
+symcalc.message.sufficient.15=全部
 
 symcalc.message.error=§c稳定性验证失败,更多信息请查看服务器控制台.§0
