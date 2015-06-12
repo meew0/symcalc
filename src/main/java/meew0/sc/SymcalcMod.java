@@ -1,15 +1,12 @@
 package meew0.sc;
 
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import meew0.sc.items.ItemSymmetryCalculator;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
@@ -18,7 +15,6 @@ import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.crafting.IArcaneRecipe;
-import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.research.ResearchItem;
 import thaumcraft.api.research.ResearchPage;
 import thaumcraft.common.config.ConfigBlocks;
@@ -29,9 +25,9 @@ import thaumcraft.common.config.ConfigResearch;
 public class SymcalcMod
 {
     public static final String MODID = "symcalc";
-    public static final String VERSION = "0.13.5";
+    public static final String VERSION = "0.14";
     public static final String NAME = "SymCalc";
-    public static final String DEP = "required-after:Thaumcraft@[4.1.1.10,)";
+    public static final String DEP = "required-after:Thaumcraft@[4.2.3.5,)";
 
     public static final String SYMCALC_KEY = "SYMMETRY_CALCULATOR";
 
