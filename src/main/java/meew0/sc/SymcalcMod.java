@@ -97,11 +97,9 @@ public class SymcalcMod
 
                 new ItemStack(itemSymCalc, 1, 0))
                 .setPages(
-                        new ResearchPage[] {
-                                new ResearchPage("symcalc.research.1"),
-                                new ResearchPage((IArcaneRecipe) ConfigResearch.recipes.get("SymmetryCalculator"))
-                        })
-                .setParents(new String[]{"INFUSION"});
+                        new ResearchPage("symcalc.research.1"),
+                        new ResearchPage((IArcaneRecipe) ConfigResearch.recipes.get("SymmetryCalculator")))
+                .setParents("INFUSION");
 
         if(isResearchHidden) {
             researchSymCalc
