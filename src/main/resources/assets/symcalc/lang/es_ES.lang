@@ -1,0 +1,36 @@
+# Traducción por mojares / Translated by mojares
+item.symmetryCalculator.name=Calculadora de Simetría
+
+
+tc.research_name.SYMMETRY_CALCULATOR=Calculadora de Simetría
+tc.research_text.SYMMETRY_CALCULATOR=Haciendo la infusiones divertidas de nuevo
+
+
+symcalc.research.1=Después de aprender como hacer un altar de infusión, el dispositivo que te ayuda a estabilizar el altar esta obsoleto. Haz clic derecho sobre la Matriz Rúnica con este dispositivo y te dirá el nivel total de estabilidad total. La el valor de estabilidad devuelto es el mismo valor usado por los cálculos internos de la Matriz Rúnica.
+
+symcalc.message.value=§bEstes altar de infusión tiene un valor de estabilidad de %s.§0
+
+symcalc.message.recipe=§aEsto es %ysuficiente para estabilizar la receta actual con una estabilidad de %s.§0
+symcalc.message.recipe.yes=
+symcalc.message.recipe.no=§4no §a
+
+symcalc.message.sufficient=§6Esto es suficiente para estabilizar recetas con una estabilidad de %i.§0
+symcalc.message.sufficient.-1=§4ninguna§6
+symcalc.message.sufficient.0=algo de "Insignificante"
+symcalc.message.sufficient.1="Insignificante"
+symcalc.message.sufficient.2=algo de "Menor"
+symcalc.message.sufficient.3="Menor"
+symcalc.message.sufficient.4=algo de "Moderado"
+symcalc.message.sufficient.5="Moderado"
+symcalc.message.sufficient.6=algo de "Alto"
+symcalc.message.sufficient.7="Alto"
+symcalc.message.sufficient.8=algo de "Muy alto"
+symcalc.message.sufficient.9="Muy alto"
+symcalc.message.sufficient.10=algo de "Peligroso"
+symcalc.message.sufficient.11=algo de "Peligroso"
+symcalc.message.sufficient.12=algo de "Peligroso"
+symcalc.message.sufficient.13=algo de "Peligroso"
+symcalc.message.sufficient.14=algo de "Peligroso"
+symcalc.message.sufficient.15=todo
+
+symcalc.message.error=§c¡La prueba de estabilidad ha fallado! Más información en la consola del servidor.§0
